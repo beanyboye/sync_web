@@ -17,12 +17,11 @@ export default function Home() {
 
       <div className={styles.backgroundImage}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Enhanced Interiors
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.tsx</code>
+          The ultimate wallpaper app!
         </p>
       </div>
 
