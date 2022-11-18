@@ -9,7 +9,7 @@ interface ImageCap {
 function ImageCap(props: ImageCap) {
     return (
         <Box>
-            <Image objectFit='cover' boxSize='200px' src={props.path}/>
+            <Image borderRadius="fill" objectFit='cover' boxSize='200px' src={props.path}/>
             {props.caption && <Text>{props.caption}</Text> }
         </Box>
     )
