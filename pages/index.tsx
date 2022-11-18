@@ -4,11 +4,20 @@ import styles from '../styles/Home.module.css'
 
 import NavBar from '../components/navbar'
 import CustomBtn from '../components/button'
-
+import ImageCap from '../components/captionimage'
+import ContentStack from '../components/contentstack'
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <CustomBtn placeholder="hello" background={true}/>
+      <ImageCap path='/seal.jpg' caption="text" />
+
+      <ContentStack>
+        <ImageCap path='/seal.jpg' caption="text" />
+        <ImageCap path='/seal.jpg' caption="TEXT" />
+        <ImageCap path='/seal.jpg' />
+      </ContentStack>
 
       <Head>
         <title>Create Next App</title>

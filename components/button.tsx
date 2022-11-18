@@ -6,7 +6,7 @@
                     for the navigation bar.
 ******************/
 
-import React, {FC} from 'react'
+import React from 'react'
 import {useRef} from 'react'
 import { Button } from "@chakra-ui/react"
 
