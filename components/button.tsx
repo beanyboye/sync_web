@@ -8,7 +8,7 @@
 
 import React from 'react'
 import {useRef} from 'react'
-import { Button } from "@chakra-ui/react"
+import { Button, ChakraProvider } from "@chakra-ui/react"
 
 interface ButtonProps {
     placeholder: string
@@ -17,9 +17,11 @@ interface ButtonProps {
 
 function CustomBtn(props: ButtonProps) {
     return (
-        <Button size='sm' background={props.background ? 'teal' : 'white'}>
-            {props.placeholder}
-        </Button>
+        <ChakraProvider>
+            <Button size='sm' background={props.background ? 'teal' : 'white'}>
+                {props.placeholder}
+            </Button>
+        </ChakraProvider>
     )
 }
 
