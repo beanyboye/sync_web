@@ -1,0 +1,12 @@
+{
+    "navButtons" : [
+        {
+            "placeholder": "Home",
+            "background":  "False"
+        },
+        {
+            "placeholder": "About",
+            "background": "True"
+        }
+    ]
+}
