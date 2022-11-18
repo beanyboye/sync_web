@@ -2,6 +2,21 @@
   padding: 0 2rem;
 }
 
+.backgroundImage {
+  background: url('/home-image.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 20vh;
+  padding-bottom: 12vh;
+  
+}
+
+.leftText {
+  padding: 0 18rem;
+}
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
