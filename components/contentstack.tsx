@@ -8,7 +8,7 @@ interface StackProps {
 
 function ContentStack(props: StackProps) {
     return (
-        <HStack spacing='24px'align='center'>
+        <HStack spacing='24px' align='center'>
             {props.children}
         </HStack>
     )

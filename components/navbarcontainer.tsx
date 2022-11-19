@@ -7,7 +7,6 @@
 ******************/
 
 import React from 'react'
-import CustomBtn from './button'
 
 // Bootstap
 import Container from 'react-bootstrap/Container'
@@ -16,30 +15,32 @@ import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import 'bootstrap/dist/css/bootstrap.css';
 
-export function NavBarContainer()
+type Props = {
+    onAboutClick: () => void
+    onHomeClick: () => void
+    onFreqClick: () => void
+}
+
+export function NavBarContainer(props: Props)
 {
     return (
         <Navbar bg="light" expand="lg" fixed='top'>
             <Container>
-                <Navbar.Brand href="#home">Enhanced Interiors</Navbar.Brand>
+                <Navbar.Brand href="#home" onClick={props.onHomeClick}>Enhanced Interiors</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
-                    <Nav.Link href="#contact">Contact</Nav.Link>
+                    <Nav.Link href="#about" onClick={props.onAboutClick}>About</Nav.Link>
+                    <Nav.Link href="#F&Q" onClick={props.onFreqClick}>F&Q</Nav.Link>
 
-                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">
-                        Another action
+                    <NavDropdown title="Contacts" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="#number">Telephone: +44 8938473038</NavDropdown.Item>
+                        <NavDropdown.Item href="#address">
+                            55, stStreet, City
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                        Separated link
-                        </NavDropdown.Item>
+                        <NavDropdown.Item href="#postcode">NR24 8HL</NavDropdown.Item>
                     </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
