@@ -34,6 +34,11 @@
   max-width: 75%;
 }
 
+.bulletText {
+  text-align: left;
+  max-width: 75%;
+}
+
 .main {
   padding: 4rem 0;
   flex: 1;
