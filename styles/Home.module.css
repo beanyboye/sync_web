@@ -8,15 +8,35 @@
   -moz-background-size: 50vh;
   -o-background-size: 50vh; 
   background-size: 50vh;
-  min-height: 20vh;
+  background-size: contain;
+  min-height: 36vh;
   min-width: 20vw;
   max-height: 10vh;
   max-width: 100vw;
-  padding-top: 35vh;
+  padding-top: 0vh;
+  padding-bottom: 20vh;
+  position: relative;
+  top: -7vh;
  /* position: relative;
   item-align: center;
   padding-top: 20vh;
   padding-bottom: 12vh; */
+}
+
+.logoB {   /*THIS ONE IS FOR THE FOOTER */
+  background: url('/logo.png') no-repeat center;
+  -webkit-background-size: 15vh;
+  -moz-background-size: 15vh;
+  -o-background-size: 15vh; 
+  background-size: 15vh;
+  background-size: contain;
+  min-height: 15vh;
+  min-width: 15vw;
+  max-height: 15vh;
+  max-width: 15vw;
+  position: relative;
+  top: 10vh
+
 }
 .backgroundImage {
   background: url('/home-image.jpg') no-repeat center center fixed;
@@ -24,7 +44,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 20vh;
+  padding-top: 45vh;
   padding-bottom: 12vh;
   
 }
@@ -34,10 +54,21 @@
   max-width: 75%;
 }
 
-.listStylePosition {
-  font-size: 2rem;
+.question { /*Delete this if question task failed */
   text-align: left;
+  font-size: 1.2rem;
+  max-width: 50vw;
+  inline-size: 250vw;
+  overflow-wrap: break-word;
+
+
+}
+
+.listStylePosition {
+  font-size: 1.6rem;
+  text-align: center;
   color: darkslategrey;
+  max-width: 50vw;
 }
 
 .bulletText {
@@ -54,10 +85,10 @@
   align-items: center;
 }
 
-.footer {
+.footer { /*Might Be Responsible For Glitch In Footer */
   display: flex;
-  flex: 1;
-  padding: 2rem 0;
+  /*flex: 1; */                           /*IF NEEDED, REMOVE COMMENT */
+  padding: 0rem 0;
   border-top: 1px solid #eaeaea;
   justify-content: center;
   align-items: center;
@@ -92,10 +123,12 @@
   text-align: center;
 }
 
-.description {
+.description { /*Positions Design smarter text */
   /*margin: 0rem 0; */ 
   line-height: 1;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  position: relative;
+  top: -13vh;
 }
 
 .code {

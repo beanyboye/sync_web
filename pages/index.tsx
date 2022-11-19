@@ -69,15 +69,37 @@ export default function Home() {
             orientation={false}
           />
 
-          <div style={{padding: '5em 0em'}} id="freq">
+          <div style={{padding: '1em 0em'}} id="freq">
             <Heading>Frequently Asked Questions</Heading>
             <Text className={styles.listStylePosition}>
               "How much is the app?"
             </Text>
-            <Text style={{textAlign: 'left'}} >
-              
+          </div>
+          <div className={styles.question}>
+              <Text style={{textAlign: 'center'}} >
+                asdauishdasuhdtytftftgfrdyhggsudfgdsiufhsasdhasdgasgduasgduasgdyagsdggggggggggggggggggggggggggggggggggggggggggufiasuhdasidhafihsyfhdsfjdsudseygf
+              </Text>
+            </div>
+            <div style={{padding: '1em 0em'}} id="freq">
+            <Text className={styles.listStylePosition}>
+              "Question?"
             </Text>
           </div>
+          <div className={styles.question}>
+              <Text style={{textAlign: 'center'}} >
+                asdauishdasuhdtytftftgfrdyhggsudfgdsiufhsasdhasdgasgduasgduasgdyagsdggggggggggggggggggggggggggggggggggggggggggufiasuhdasidhafihsyfhdsfjdsudseygf
+              </Text>
+            </div>
+            <div style={{padding: '1em 0em'}} id="freq">
+            <Text className={styles.listStylePosition}>
+              "Question?"
+            </Text>
+          </div>
+          <div className={styles.question}>
+              <Text style={{textAlign: 'center'}} >
+                asdauishdasuhdtytftftgfrdyhggsudfgdsiufhsasdhasdgasgduasgduasgdyagsdggggggggggggggggggggggggggggggggggggggggggufiasuhdasidhafihsyfhdsfjdsudseygf
+              </Text>
+            </div>
 
           <ContentStack>
             <ImageCap path='/Intro_2.png' caption="fsdfds"/>
@@ -88,16 +110,8 @@ export default function Home() {
         </main>
 
         <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <span className={styles.logo}>
-              <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <span className={styles.logoB}>
             </span>
-          </a>
         </footer>
       </div>
     </div>
