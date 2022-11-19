@@ -1,19 +1,30 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { Text } from "@chakra-ui/react"
+import { Text, Heading } from "@chakra-ui/react"
 
 
 import CustomNavBar from '../components/navbarcontainer'
 import CustomBtn from '../components/button'
 import ImageCap from '../components/captionimage'
 import ContentStack from '../components/contentstack'
+import Section from '../components/section'
+import { useRef } from 'react'
 
 export default function Home() {
+  
+  const about = useRef<HTMLDivElement>(null)
+  const home = useRef<HTMLDivElement>(null)
+  const freq = useRef<HTMLDivElement>(null)
+
   return (   
     <div> 
 
-      <CustomNavBar/>
+      <CustomNavBar 
+        onAboutClick={() => about.current?.scrollIntoView({ behavior: 'smooth'})}
+        onHomeClick={() => home.current?.scrollIntoView({ behavior: 'smooth' })}
+        onFreqClick={() => freq.current?.scrollIntoView({ behavior: 'smooth' })}
+      />
 
       <div className={styles.backgroundImage}>
         <h1 className={styles.title}>
@@ -21,7 +32,7 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          The ultimate wallpaper app!
+          Design smarter, not harder
         </p>
       </div>
 
@@ -36,44 +47,42 @@ export default function Home() {
 
         <main className={styles.main}>
           
-          <Text className={styles.leftText}>
+          <Text className={styles.aloneText}>
             hello world
             dfgdfggjkdflj;;;;;gsdfdlsfgdsfjgjdsfjgdsfjkgjldsfgkl;dsfjgkldsfjgjdsfkl;jgkl;dsf
             dgdsfgldsf;kgj;dsfjglk;dsgkjdsfkgjl;kdsfg
             gkjdsfgdsfjgkldsfjklgjdsfgjkldsfjgkldsfjlkgjdsfjgkldsfjgkl;dsjs
           </Text>
 
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
+          <ContentStack>
+            <ImageCap path='/Intro_1.png'/>
+            <ImageCap path='/Intro_2.png'/>
+            <ImageCap path='/Intro_3.png'/>
+            <ImageCap path='/Intro_4.png'/>
+          </ContentStack>
 
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
+          <Section
+            title="About"
+            text="jfsdjkfkldsklsgjfsdjkgldfjgkjgdflkjgkdfjklgjkldfgkldfjklgjdfslkjg;kldsfj;gkljsdfklgjkl;dfkslgjkldfsklgjdlksfjglkdsfjklgjdsfklgjklfj"
+            id="about"
+            src="/Intro_1.png"
+            orientation={true}
+          />
 
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h2>Examples &rarr;</h2>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
+          <Section 
+            title="Review"
+            text="jfsdjkfkldsklsgjfsdjkgldfjgkjgdflkjgkdfjklgjkldfgkldfjklgjdfslkjg;kldsfj;gkljsdfklgjkl;dfkslgjkldfsklgjdlksfjglkdsfjklgjdsfklgjklfj"
+            id="review"
+            src="/Intro_2.png"
+            orientation={false}
+          />
 
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.card}
-            >
-              <h2>Deploy &rarr;</h2>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
+          <div style={{padding: '2em 0em'}} id="freq">
+            <Heading>Frequently Asked Questions</Heading>
+            <Text style={{textAlign: 'left'}} >
+            </Text>
           </div>
+
         </main>
 
         <footer className={styles.footer}>

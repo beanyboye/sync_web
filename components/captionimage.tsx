@@ -8,8 +8,8 @@ interface ImageCap {
 
 function ImageCap(props: ImageCap) {
     return (
-        <Box>
-            <Image borderRadius="fill" objectFit='cover' boxSize='200px' src={props.path}/>
+        <Box style={{padding: '5em 0'}}>
+            <Image borderRadius={10} objectFit='cover' maxWidth={220} src={props.path}/>
             {props.caption && <Text>{props.caption}</Text> }
         </Box>
     )
