@@ -27,7 +27,7 @@ export function NavBarContainer(props: Props)
         <Navbar bg="light" expand="lg" fixed='top'>
             <Container>
 
-                <Navbar.Brand href="#home" onClick={props.onHomeClick}>Enhanced Interiors</Navbar.Brand>
+                <Navbar.Brand href="#home" onClick={props.onHomeClick} style={{color: "#455A64"}} >Enhanced Interiors</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
 

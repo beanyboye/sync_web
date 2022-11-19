@@ -18,7 +18,7 @@ interface ButtonProps {
 function CustomBtn(props: ButtonProps) {
     return (
         <ChakraProvider>
-            <Button size='sm' background={props.background ? 'teal' : 'white'}>
+            <Button size='sm' background={props.background ? '#9A98CC' : 'white'}>
                 {props.placeholder}
             </Button>
         </ChakraProvider>

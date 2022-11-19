@@ -3,14 +3,27 @@ import { Image, Box, Text } from "@chakra-ui/react"
 
 interface ImageCap {
     path: string,           // parameter to insert a image to a Box object
-    caption?: string         // insert text under the image inside the box
+    caption?: string        // insert text under the image inside the box
+    fill?: boolean
+    name?: string   
 }
 
 function ImageCap(props: ImageCap) {
     return (
-        <Box style={{padding: '5em 0'}}>
-            <Image borderRadius={10} objectFit='cover' maxWidth={220} src={props.path}/>
-            {props.caption && <Text>{props.caption}</Text> }
+        <Box style={{padding: '2em'}}>
+            <Image 
+                alt='image' 
+                borderRadius={props.fill ? 150 : 20}
+                maxWidth={220} 
+                src={props.path}
+            />
+            {props.caption && 
+                <Text align='center' maxWidth={220}>
+                    <i>"{props.caption}"<br></br></i>
+                    {props.name && 
+                    <b> - {props.name}</b>}
+                </Text>
+            }
         </Box>
     )
 }

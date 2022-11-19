@@ -7,6 +7,7 @@ interface SectionProps {
     id: string
     src?: string
     orientation?: boolean 
+    button?: boolean
 }
 
 function Section(props: SectionProps) 
@@ -20,7 +21,7 @@ function Section(props: SectionProps)
             <Image 
                 alignContent={props.orientation ? 'left' : 'right'} 
                 src={props.src}
-
+                borderRadius={20}
                 maxHeight={'50vh'}
                 width={'20vw'}
             />
