@@ -10,8 +10,9 @@ interface ImageCap {
 
 function ImageCap(props: ImageCap) {
     return (
-        <Box style={{padding: '2em', margin: "0 auto"}}>
+        <Box style={{padding: '2em'}}>
             <Image 
+                style={{ margin: "0 auto"}}
                 alt='image' 
                 borderRadius={props.fill ? 150 : 20}
                 maxWidth={220} 
