@@ -55,7 +55,7 @@ export default function Home() {
 
           <Section
             title="About"
-            text="jfsdjkfkldsklsgjfsdjkgldfjgkjgdflkjgkdfjklgjkldfgkldfjklgjdfslkjg;kldsfj;gkljsdfklgjkl;dfkslgjkldfsklgjdlksfjglkdsfjklgjdsfklgjklfj"
+            text="Enhanced Interiors takes the guess work out of decorating your home. Using AR we size up your walls and do the calculations to make sure what you see is what you get!"
             id="about"
             src="/Intro_1.png"
             orientation={true}
@@ -63,7 +63,7 @@ export default function Home() {
 
           <Section 
             title="Review"
-            text="jfsdjkfkldsklsgjfsdjkgldfjgkjgdflkjgkdfjklgjkldfgkldfjklgjdfslkjg;kldsfj;gkljsdfklgjkl;dfkslgjkldfsklgjdlksfjglkdsfjklgjdsfklgjklfj"
+            text="Hosting a wide variety of providers, we let you select from a wide catalogue of designs to help you make that crucial decision and get things looking the way you want."
             id="review"
             src="/Intro_2.png"
             orientation={false}
