@@ -16,9 +16,8 @@ export default function Home() {
       <CustomNavBar/>
 
       <div className={styles.backgroundImage}>
-        <h1 className={styles.title}>
-          Enhanced Interiors
-        </h1>
+        <div className={styles.logo}>
+        </div>
 
         <p className={styles.description}>
           The ultimate wallpaper app!
