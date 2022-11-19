@@ -33,7 +33,7 @@ export function NavBarContainer(props: Props)
 
                     <Nav className="me-auto">
                     <Nav.Link href="#about" onClick={props.onAboutClick}>About</Nav.Link>
-                    <Nav.Link href="#FAQ" onClick={props.onFreqClick}>F&Q</Nav.Link>
+                    <Nav.Link href="#FAQ" onClick={props.onFreqClick}>FAQ</Nav.Link>
 
                     <NavDropdown title="Contacts" id="basic-nav-dropdown">
                         <NavDropdown.Item href="#number">Telephone: +44 8938473038</NavDropdown.Item>

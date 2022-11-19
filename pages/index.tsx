@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Text, Heading } from "@chakra-ui/react"
 
@@ -10,6 +9,8 @@ import ImageCap from '../components/captionimage'
 import ContentStack from '../components/contentstack'
 import Section from '../components/section'
 import { useRef } from 'react'
+
+import { HStack } from '@chakra-ui/react'
 
 export default function Home() {
 
@@ -31,10 +32,10 @@ export default function Home() {
         </div>
 
         <p className={styles.description}>
-          Design smarter, not harder
+          Design smarter. Not harder.
           <br></br>
-          <div style={{padding: ".5em 0"}}>
-            <CustomBtn placeholder="SignUp" background={true} />
+          <div style={{padding: "2em 0"}}>
+            <CustomBtn placeholder="Sign Up" background={true} />
           </div>
         </p>
       </div>
@@ -77,58 +78,78 @@ export default function Home() {
           />
           <div style={{padding: "2em 0"}}/>
           <Section 
-            title="Review"
+            title="App"
             text="Hosting a wide variety of providers, we let you select from a wide catalogue of designs to help you make that crucial decision and get things looking the way you want."
             id="review"
-            src="/Intro_2.png"
+            src="/app.jpg"
             orientation={false}
           />
 
+          <div style={{padding: "2em 0"}}/>
+
           <div style={{padding: '1em 0em'}} id="freq">
-            <Heading>Frequently Asked Questions</Heading>
+            <Heading fontSize="2em">Frequently Asked Questions</Heading>
+            <div style={{padding: "2em 0"}}/>
             <Text className={styles.listStylePosition}>
-              "How much is the app?"
+              <b>A:</b> How much is the app?
             </Text>
           </div>
           <div className={styles.question}>
               <Text style={{textAlign: 'center'}} >
-                asdauishdasuhdtytftftgfrdyhggsudfgdsiufhsasdhasdgasgduasgduasgdyagsdggggggggggggggggggggggggggggggggggggggggggufiasuhdasidhafihsyfhdsfjdsudseygf
+                <b>A:</b> In pulvinar consequat lacus ut rutrum. Sed consequat facilisis fringilla. Aliquam at iaculis sem, eget fringilla diam.
               </Text>
-            </div>
-            <div style={{padding: '1em 0em'}} id="freq">
+          </div>
+
+          <div style={{padding: ".5em 0"}}/>
+
+          <div style={{padding: '1em 0em'}} id="freq">
             <Text className={styles.listStylePosition}>
-              "Question?"
+              <b>Q:</b> Question
+            </Text>
+          </div>
+
+          <div className={styles.question}>
+              <Text style={{textAlign: 'center'}} >
+                <b>A:</b> In pulvinar consequat lacus ut rutrum. 
+              </Text>
+          </div>
+
+          <div style={{padding: ".5em 0"}}/>
+
+          <div style={{padding: '1em 0em'}} id="freq">
+            <Text className={styles.listStylePosition}>
+              <b>Q:</b> Question
             </Text>
           </div>
           <div className={styles.question}>
               <Text style={{textAlign: 'center'}} >
-                asdauishdasuhdtytftftgfrdyhggsudfgdsiufhsasdhasdgasgduasgduasgdyagsdggggggggggggggggggggggggggggggggggggggggggufiasuhdasidhafihsyfhdsfjdsudseygf
+                <b>A:</b> Sed consequat facilisis fringilla. Aliquam at iaculis sem, eget fringilla diam.              
               </Text>
-            </div>
-            <div style={{padding: '1em 0em'}} id="freq">
-            <Text className={styles.listStylePosition}>
-              "Question?"
-            </Text>
           </div>
-          <div className={styles.question}>
-              <Text style={{textAlign: 'center'}} >
-                asdauishdasuhdtytftftgfrdyhggsudfgdsiufhsasdhasdgasgduasgduasgdyagsdggggggggggggggggggggggggggggggggggggggggggufiasuhdasidhafihsyfhdsfjdsudseygf
-              </Text>
-            </div>
+
+          <div style={{padding: "2em 0"}}/>
 
           <ContentStack>
-            <ImageCap path='/nick.jpg' caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a risus id ipsum dictum suscipit quis vel erat. " fill={true} name="nick"/>
-            <ImageCap path='/katie.png' caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a risus id ipsum dictum suscipit quis vel erat. " fill={true} name="katie"/>   
-            <ImageCap path='/callum.jpg' caption="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a risus id ipsum dictum suscipit quis vel erat. " fill={true} name="callum"/> 
+            <ImageCap path='/nick.jpg' caption="I am an indecisive person who needs to see or visualise changes before I can commit. EI is an absolute saviour during the planning stages of my home deco. I could visualise how various patterns would look on my walls and consulate with my husband before we made our final decisions, and got a good price from comparing! Would highly recommend!" fill={true} name="Nick"/>
+            <ImageCap path='/katie.png' caption="EI's measurement tool is also really handy as I have very high ceilings so this estimate and rolls suggestions are convenient. Excellent! fixes a real problem and gives you price estimated at the same time." fill={true} name="Katie"/>   
+            <ImageCap path='/callum.jpg' caption="Genuinely useful use of AR technology but not just showcase or gimmicky! This app really make my home DIY project way easier! Save lots of time and money, and we picked something bolder than I’d normally have imagined." fill={true} name="Callum"/> 
           </ContentStack>
-
 
         </main>
 
-        <footer className={styles.footer}>
+        <footer className={styles.footer} >
+          <HStack spacing='50vw'>
             <span className={styles.logoB}>
             </span>
+            <div style={{position: 'relative', top: '3vh'}}>
+              <h4>Contacts</h4>
+              <p>Telephone: +44 8938473038</p>
+              <p>55, stStreet, City</p>
+              <p>NR24 8HL</p>
+            </div>
+          </HStack>
         </footer>
+
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ function Section(props: SectionProps)
     return (
         <HStack id={props.id} flexDirection={props.orientation ? 'row' : 'row-reverse'} maxWidth={['100%', '80%', '50%']}>
             <Card style={{padding: '0 2em'}}>
-                <Heading>{props.title}</Heading>
+                <Heading fontSize="2em">{props.title}</Heading>
                 <Text>{props.text}</Text>
             </Card>
             <Image 

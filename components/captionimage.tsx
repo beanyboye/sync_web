@@ -10,7 +10,7 @@ interface ImageCap {
 
 function ImageCap(props: ImageCap) {
     return (
-        <Box style={{padding: '2em'}}>
+        <Box style={{padding: '2em', margin: "0 auto"}}>
             <Image 
                 alt='image' 
                 borderRadius={props.fill ? 150 : 20}
@@ -18,7 +18,7 @@ function ImageCap(props: ImageCap) {
                 src={props.path}
             />
             {props.caption && 
-                <Text align='center' maxWidth={220}>
+                <Text align='center' maxWidth={300} paddingTop="1em">
                     <i>"{props.caption}"<br></br></i>
                     {props.name && 
                     <b> - {props.name}</b>}
