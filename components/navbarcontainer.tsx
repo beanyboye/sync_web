@@ -26,9 +26,11 @@ export function NavBarContainer(props: Props)
     return (
         <Navbar bg="light" expand="lg" fixed='top'>
             <Container>
+
                 <Navbar.Brand href="#home" onClick={props.onHomeClick}>Enhanced Interiors</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
+
                     <Nav className="me-auto">
                     <Nav.Link href="#about" onClick={props.onAboutClick}>About</Nav.Link>
                     <Nav.Link href="#F&Q" onClick={props.onFreqClick}>F&Q</Nav.Link>
@@ -43,6 +45,7 @@ export function NavBarContainer(props: Props)
 
                     </Nav>
                 </Navbar.Collapse>
+                
             </Container>
         </Navbar>
     )

@@ -12,7 +12,7 @@ import Section from '../components/section'
 import { useRef } from 'react'
 
 export default function Home() {
-  
+
   const about = useRef<HTMLDivElement>(null)
   const home = useRef<HTMLDivElement>(null)
   const freq = useRef<HTMLDivElement>(null)
@@ -77,11 +77,21 @@ export default function Home() {
             orientation={false}
           />
 
-          <div style={{padding: '2em 0em'}} id="freq">
+          <div style={{padding: '5em 0em'}} id="freq">
             <Heading>Frequently Asked Questions</Heading>
+            <Text className={styles.listStylePosition}>
+              "How much is the app?"
+            </Text>
             <Text style={{textAlign: 'left'}} >
+              
             </Text>
           </div>
+
+          <ContentStack>
+            <ImageCap path='/Intro_2.png' caption="fsdfds"/>
+            <ImageCap path='/Intro_3.png' caption="fsdfds"/>   
+            <ImageCap path='/Intro_4.png' caption="fsdfds"/>                 
+          </ContentStack>
 
         </main>
 

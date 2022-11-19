@@ -18,6 +18,12 @@
   max-width: 75%;
 }
 
+.listStylePosition {
+  font-size: 2rem;
+  text-align: left;
+  color: darkslategrey;
+}
+
 .main {
   padding: 4rem 0;
   flex: 1;
