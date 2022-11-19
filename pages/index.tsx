@@ -46,11 +46,14 @@ export default function Home() {
 
         <main className={styles.main}>
           
-          <Text className={styles.aloneText}>
-            hello world
-            dfgdfggjkdflj;;;;;gsdfdlsfgdsfjgjdsfjgdsfjkgjldsfgkl;dsfjgkldsfjgjdsfkl;jgkl;dsf
-            dgdsfgldsf;kgj;dsfjglk;dsgkjdsfkgjl;kdsfg
-            gkjdsfgdsfjgkldsfjklgjdsfgjkldsfjgkldsfjlkgjdsfjgkldsfjgkl;dsjs
+          <Text className={styles.bulletText}>
+            <h4>Let's do way with...</h4> 
+            <ul>
+              <li>the tape measures and rough notes</li>
+              <li>buying too many (or too few!!) rolls...</li>
+              <li>tiny ripped shop samples stuck on walls</li>
+              <li>the uncertainty of how finished room will look</li>
+            </ul>
           </Text>
 
           <ContentStack>
