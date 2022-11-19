@@ -55,7 +55,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a ris vel erat. 
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a risus id ipsum dictum suscipit quis vel erat. scing elit. Nam a risus id ipsum dictum susci
           </Text>
-          
+
           <div style={{padding: "2em 0"}}/>
 
           <ContentStack>
@@ -69,8 +69,7 @@ export default function Home() {
 
           <Section
             title="About"
-            text=
-            "Lorem ipsum dolor sit amet"
+            text="Enhanced Interiors takes the guess work out of decorating your home. Using AR we size up your walls and do the calculations to make sure what you see is what you get!"
             id="about"
             src="/placeholder.png"
             orientation={true}
@@ -79,8 +78,7 @@ export default function Home() {
           <div style={{padding: "2em 0"}}/>
           <Section 
             title="Review"
-            text=
-            "Nam a risus id ipsum dictum suscipit quis vel erat. "
+            text="Hosting a wide variety of providers, we let you select from a wide catalogue of designs to help you make that crucial decision and get things looking the way you want."
             id="review"
             src="/Intro_2.png"
             orientation={false}
